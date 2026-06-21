@@ -973,10 +973,15 @@
     <span class="nav-wordmark">ATA KIDDO</span>
   </a>
   <div class="nav-links">
-    <a href="#product">Product</a>
-    <a href="#collections">Collections</a>
-    <a href="#signup" class="nav-cta">Reserve My Spot</a>
+    <a href="#product" data-i18n="nav_product">Product</a>
+    <a href="#collections" data-i18n="nav_collections">Collections</a>
+    <a href="#signup" class="nav-cta" data-i18n="nav_cta">Reserve My Spot</a>
   </div>
+  <button id="lang-toggle" onclick="toggleLang()" style="background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:0.82rem;font-weight:500;letter-spacing:0.06em;color:var(--mid);padding:6px 4px;display:flex;gap:0;align-items:center;margin-left:8px;">
+    <span id="lang-en-btn">EN</span>
+    <span style="color:var(--light);margin:0 4px;">|</span>
+    <span id="lang-de-btn">DE</span>
+  </button>
 </nav>
 
 <!-- ── HERO ─────────────────────────────────────────── -->
@@ -985,34 +990,34 @@
     <div class="hero-left reveal">
       <div class="hero-eyebrow">
         <div class="hero-eyebrow-line"></div>
-        <span class="label-tag">First Batch · Q1 2027</span>
+        <span class="label-tag" data-i18n="hero_eyebrow">First Batch · Q1 2027</span>
       </div>
-      <h1 class="hero-h1 display">
+      <h1 class="hero-h1 display" data-i18n-html="hero_h1">
         Where play<br>becomes <em>healthy</em><br>movement.
       </h1>
-      <p class="hero-sub">
+      <p class="hero-sub" data-i18n="hero_sub">
         Premium movement equipment for kids. Designed to fit your home, and built to build your child.
       </p>
       <div class="hero-price">
         <span class="hero-price-main">€119</span>
-        <span class="hero-price-tag">Early Access</span>
+        <span class="hero-price-tag" data-i18n="early_access">Early Access</span>
         <span class="hero-price-retail">€179</span>
       </div>
 
       <div class="hero-form-wrap">
-        <p class="hero-form-label">Reserve yours</p>
+        <p class="hero-form-label" data-i18n="reserve_yours">Reserve yours</p>
         <form class="hero-form" action="#" onsubmit="handleHeroSubmit(event)">
-          <input type="text" name="name" placeholder="Your name" required style="margin-bottom:8px;" />
+          <input type="text" name="name" placeholder="Your name" data-i18n-placeholder="placeholder_name" required style="margin-bottom:8px;" />
           <input type="email" name="email" placeholder="your@email.com" required />
           <label style="display:flex;align-items:flex-start;gap:10px;font-size:0.8rem;color:var(--mid);line-height:1.6;cursor:pointer;">
             <input type="checkbox" name="gdpr" required style="margin-top:3px;flex-shrink:0;accent-color:var(--sand);" />
-            <span>I agree to receive updates about ATA KIDDO's launch and accept the <a href="privacy.html" target="_blank" style="color:var(--sand);text-decoration:underline;">Privacy Policy</a>. You can unsubscribe at any time.</span>
+            <span data-i18n-html="gdpr_text">I agree to receive updates about ATA KIDDO's launch and accept the <a href="privacy.html" target="_blank" style="color:var(--sand);text-decoration:underline;">Privacy Policy</a>. You can unsubscribe at any time.</span>
           </label>
-          <button type="submit">Reserve My Spot</button>
+          <button type="submit" data-i18n="nav_cta">Reserve My Spot</button>
         </form>
         <p class="hero-note">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1a5 5 0 100 10A5 5 0 006 1zM6 3.5v3l2 1.5" stroke="#c0bbb4" stroke-linecap="round"/></svg>
-          First batch: 1,000 units · Ships Q1 2027
+          <span data-i18n="hero_batch_note">First batch: 1,000 units · Ships Q1 2027</span>
         </p>
       </div>
     </div>
@@ -1024,8 +1029,8 @@
         <div class="hero-badge">
           <div class="hero-badge-icon">🌿</div>
           <div class="hero-badge-text">
-            <p>EU Safety</p>
-            <strong>CE Certified</strong>
+            <p data-i18n="badge_eu_safety">EU Safety</p>
+            <strong data-i18n="badge_ce">CE Certified</strong>
           </div>
         </div>
       </div>
@@ -1041,28 +1046,28 @@
 
 <!-- ── MARQUEE ───────────────────────────────────────── -->
 <div class="marquee-wrap">
-  <div class="marquee-track">
+  <div class="marquee-track" id="marquee-track">
     <!-- repeated twice for seamless loop -->
-    <span class="marquee-item">Play<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Move<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Grow<span class="marquee-dot"></span></span>
-    <span class="marquee-item">For Kids<span class="marquee-dot"></span></span>
-    <span class="marquee-item">CE Certified<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Scandinavian Design<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Interior Friendly<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Screen-free Play<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Active Play<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Daily Active Play<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Play<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Move<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Grow<span class="marquee-dot"></span></span>
-    <span class="marquee-item">For Kids<span class="marquee-dot"></span></span>
-    <span class="marquee-item">CE Certified<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Scandinavian Design<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Interior Friendly<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Screen-free Play<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Active Play<span class="marquee-dot"></span></span>
-    <span class="marquee-item">Daily Active Play<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="play">Play<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="move">Move<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="grow">Grow<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="for_kids">For Kids<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="ce_certified">CE Certified<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="scandinavian_design">Scandinavian Design<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="interior_friendly">Interior Friendly<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="screen_free">Screen-free Play<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="active_play">Active Play<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="daily_active">Daily Active Play<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="play">Play<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="move">Move<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="grow">Grow<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="for_kids">For Kids<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="ce_certified">CE Certified<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="scandinavian_design">Scandinavian Design<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="interior_friendly">Interior Friendly<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="screen_free">Screen-free Play<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="active_play">Active Play<span class="marquee-dot"></span></span>
+    <span class="marquee-item" data-marquee="daily_active">Daily Active Play<span class="marquee-dot"></span></span>
   </div>
 </div>
 
@@ -1070,21 +1075,21 @@
 <section class="section-problem">
   <div class="problem-grid">
     <div class="problem-left reveal">
-      <span class="label-tag">The Problem</span>
-      <h2 class="display">
+      <span class="label-tag" data-i18n="problem_label">The Problem</span>
+      <h2 class="display" data-i18n-html="problem_h2">
         Kids move less<br>than ever before.
       </h2>
     </div>
     <div class="problem-right reveal reveal-delay-1">
-      <p>Too much screen time, not enough movement. Indoor spaces don't invite active play, and most toys develop cognitive skills while completely ignoring motor development — the foundation of confident, healthy children.</p>
+      <p data-i18n="problem_body">Too much screen time, not enough movement. Indoor spaces don't invite active play, and most toys develop cognitive skills while completely ignoring motor development — the foundation of confident, healthy children.</p>
       <div class="stat-row">
         <div class="stat">
           <div class="stat-number">1 in 9</div>
-          <div class="stat-label">children meets all daily<br>movement guidelines</div>
+          <div class="stat-label" data-i18n-html="stat1_label">children meets all daily<br>movement guidelines</div>
         </div>
         <div class="stat">
           <div class="stat-number">40–60%</div>
-          <div class="stat-label">of young children exceed<br>recommended screen time</div>
+          <div class="stat-label" data-i18n-html="stat2_label">of young children exceed<br>recommended screen time</div>
         </div>
       </div>
       <p style="font-size:0.68rem; color:var(--mid); margin-top:20px; line-height:1.6;">Sources: WHO 24-hour movement guidelines meta-analysis, 26 studies / 11,768 children (PMC, 2023) · Screen time &amp; motor development systematic review (Pediatric Discovery, Wiley, 2025)</p>
@@ -1097,31 +1102,31 @@
   <div class="product-inner">
     <div class="product-image-wrap reveal">
       <img src="bike-detail.jpg" alt="ATA KIDDO Movement Bike – Sand Collection" />
-      <span class="product-tag">Sand Collection</span>
+      <span class="product-tag" data-i18n="sand_collection">Sand Collection</span>
     </div>
     <div class="product-text reveal reveal-delay-1">
-      <span class="label-tag">The Product</span>
+      <span class="label-tag" data-i18n="product_label">The Product</span>
       <h2 class="display">ATA KIDDO<br>Movement Bike</h2>
-      <p>Crafted for short, joyful sessions of active play. Intuitive for little riders, refined enough for your living room.</p>
+      <p data-i18n="product_desc">Crafted for short, joyful sessions of active play. Intuitive for little riders, refined enough for your living room.</p>
       <ul class="spec-list">
         <li class="spec-item">
-          <span class="spec-key">Designed for</span>
-          <span class="spec-val">Young children</span>
+          <span class="spec-key" data-i18n="spec_designed_for">Designed for</span>
+          <span class="spec-val" data-i18n="spec_young_children">Young children</span>
         </li>
         <li class="spec-item">
-          <span class="spec-key">Seat</span>
-          <span class="spec-val">Adjustable height</span>
+          <span class="spec-key" data-i18n="spec_seat">Seat</span>
+          <span class="spec-val" data-i18n="spec_adjustable_height">Adjustable height</span>
         </li>
         <li class="spec-item">
-          <span class="spec-key">Mechanism</span>
-          <span class="spec-val">Quiet, smooth pedals</span>
+          <span class="spec-key" data-i18n="spec_mechanism">Mechanism</span>
+          <span class="spec-val" data-i18n="spec_quiet_pedals">Quiet, smooth pedals</span>
         </li>
         <li class="spec-item">
-          <span class="spec-key">Safety</span>
-          <span class="spec-val">CE certified (EU)</span>
+          <span class="spec-key" data-i18n="spec_safety">Safety</span>
+          <span class="spec-val" data-i18n="spec_ce_certified">CE certified (EU)</span>
         </li>
         <li class="spec-item">
-          <span class="spec-key">Collections</span>
+          <span class="spec-key" data-i18n="spec_collections">Collections</span>
           <div class="color-dots">
             <div class="color-dot" style="background:#C4A87A;" title="Sand"></div>
             <div class="color-dot" style="background:#5E87A2;" title="Ocean"></div>
@@ -1129,11 +1134,11 @@
           </div>
         </li>
         <li class="spec-item">
-          <span class="spec-key">Use</span>
-          <span class="spec-val">Indoor, daily play</span>
+          <span class="spec-key" data-i18n="spec_use">Use</span>
+          <span class="spec-val" data-i18n="spec_indoor">Indoor, daily play</span>
         </li>
         <li class="spec-item">
-          <span class="spec-key">Early access price</span>
+          <span class="spec-key" data-i18n="spec_early_access_price">Early access price</span>
           <span class="spec-val" style="color:var(--sand);font-weight:500;">€119 <span style="color:#c0bbb4;font-weight:300;text-decoration:line-through;font-size:0.85rem;">€179</span></span>
         </li>
       </ul>
@@ -1141,7 +1146,7 @@
   </div>
 </section>
 
-<!-- ── BENEFITS ──────────────────────────────────────── -->
+<!-- ── STORY (BENEFITS DARK) ──────────────────────────── -->
 <section style="padding:120px 24px;background:var(--dark);overflow:hidden;position:relative;">
   <!-- decorative background circle -->
   <div style="position:absolute;top:-120px;right:-120px;width:500px;height:500px;border-radius:50%;background:rgba(196,168,122,0.06);pointer-events:none;"></div>
@@ -1150,32 +1155,32 @@
   <div style="max-width:860px;margin:0 auto;">
     <!-- header -->
     <div class="reveal" style="margin-bottom:72px;">
-      <span class="label-tag" style="background:rgba(196,168,122,0.15);color:var(--sand);">Our Story</span>
-      <h2 class="display" style="margin-top:16px;color:white;font-size:clamp(2.4rem,5vw,3.6rem);">Why we built<br>ATA KIDDO</h2>
+      <span class="label-tag" style="background:rgba(196,168,122,0.15);color:var(--sand);" data-i18n="story_label">Our Story</span>
+      <h2 class="display" style="margin-top:16px;color:white;font-size:clamp(2.4rem,5vw,3.6rem);" data-i18n-html="story_h2">Why we built<br>ATA KIDDO</h2>
     </div>
 
     <!-- two column intro -->
     <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:64px;">
-      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.6);">Growing up, my wife and I never needed to be told to go outside. We climbed trees, ran around the neighbourhood with our friends, and came home dirty and exhausted. Movement was just… life.</p>
-      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.6);">Then we watched something shift in the children around us. Nieces, nephews, friends' kids — hours in front of screens, surrounded by clever toys for their minds. But somewhere along the way, the body got left behind.</p>
+      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.6);" data-i18n="story_col1">Growing up, my wife and I never needed to be told to go outside. We climbed trees, ran around the neighbourhood with our friends, and came home dirty and exhausted. Movement was just… life.</p>
+      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.6);" data-i18n="story_col2">Then we watched something shift in the children around us. Nieces, nephews, friends' kids — hours in front of screens, surrounded by clever toys for their minds. But somewhere along the way, the body got left behind.</p>
     </div>
 
     <!-- pull quote -->
     <div class="reveal" style="border-left:3px solid var(--sand);padding:32px 40px;margin-bottom:64px;background:rgba(196,168,122,0.07);border-radius:0 16px 16px 0;">
       <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,2.1rem);font-style:italic;color:white;line-height:1.5;font-weight:300;">"I want to ride it too.<br>It looks fun."</p>
-      <p style="margin-top:16px;font-size:0.85rem;color:var(--sand);letter-spacing:0.08em;text-transform:uppercase;">— Our 3-year-old niece, watching her mum on a stationary bike</p>
+      <p style="margin-top:16px;font-size:0.85rem;color:var(--sand);letter-spacing:0.08em;text-transform:uppercase;" data-i18n="pull_quote_attribution">— Our 3-year-old niece, watching her mum on a stationary bike</p>
     </div>
 
     <!-- conclusion -->
     <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:64px;">
-      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.6);">She wasn't asking for a cartoon. She wasn't asking for a tablet. She wanted to move. I looked at my wife and said: <em style="color:white;">"We need to close this gap."</em></p>
-      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.6);">There were plenty of toys for little minds — but almost nothing designed to get little bodies moving, indoors, in a way that fit real family homes. Nothing a toddler could call their own.</p>
+      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.6);" data-i18n-html="story_col3">She wasn't asking for a cartoon. She wasn't asking for a tablet. She wanted to move. I looked at my wife and said: <em style="color:white;">"We need to close this gap."</em></p>
+      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.6);" data-i18n="story_col4">There were plenty of toys for little minds — but almost nothing designed to get little bodies moving, indoors, in a way that fit real family homes. Nothing a toddler could call their own.</p>
     </div>
 
     <!-- closing statement -->
     <div class="reveal" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;padding-top:48px;border-top:1px solid rgba(255,255,255,0.1);">
-      <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.5vw,1.8rem);color:white;font-weight:300;font-style:italic;">That was the moment ATA KIDDO was born.</p>
-      <p style="font-size:1rem;color:var(--sand);font-weight:500;letter-spacing:0.06em;">— Boki & Rora</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,2.5vw,1.8rem);color:white;font-weight:300;font-style:italic;" data-i18n="story_closing">That was the moment ATA KIDDO was born.</p>
+      <p style="font-size:1rem;color:var(--sand);font-weight:500;letter-spacing:0.06em;">— Boki &amp; Rora</p>
     </div>
   </div>
 </section>
@@ -1183,26 +1188,26 @@
 <section class="section-benefits">
   <div class="benefits-header reveal">
     <div>
-      <span class="label-tag">Why It Works</span>
-      <h2 class="display">Built for how<br>children play.</h2>
+      <span class="label-tag" data-i18n="benefits_label">Why It Works</span>
+      <h2 class="display" data-i18n-html="benefits_h2">Built for how<br>children play.</h2>
     </div>
-    <p>Designed around child development principles, not fitness aesthetics.</p>
+    <p data-i18n="benefits_sub">Designed around child development principles, not fitness aesthetics.</p>
   </div>
   <div class="benefits-grid">
     <div class="benefit-card reveal">
       <div class="benefit-num">01</div>
-      <h3>Strong Legs & Coordination</h3>
-      <p>Strengthens legs, core and coordination through full-body pedaling — the movement kids need most in their early years.</p>
+      <h3 data-i18n="benefit1_title">Strong Legs &amp; Coordination</h3>
+      <p data-i18n="benefit1_body">Strengthens legs, core and coordination through full-body pedaling — the movement kids need most in their early years.</p>
     </div>
     <div class="benefit-card reveal reveal-delay-1">
       <div class="benefit-num">02</div>
-      <h3>Confidence Through Movement</h3>
-      <p>Children develop at their own pace. No pressure, no competition — just the quiet joy of mastering their own body.</p>
+      <h3 data-i18n="benefit2_title">Confidence Through Movement</h3>
+      <p data-i18n="benefit2_body">Children develop at their own pace. No pressure, no competition — just the quiet joy of mastering their own body.</p>
     </div>
     <div class="benefit-card reveal reveal-delay-2">
       <div class="benefit-num">03</div>
-      <h3>Made for Modern Homes</h3>
-      <p>Muted, natural tones and Scandinavian-inspired forms. ATA KIDDO belongs in your living room — not hidden away.</p>
+      <h3 data-i18n="benefit3_title">Made for Modern Homes</h3>
+      <p data-i18n="benefit3_body">Muted, natural tones and Scandinavian-inspired forms. ATA KIDDO belongs in your living room — not hidden away.</p>
     </div>
   </div>
 </section>
@@ -1212,22 +1217,22 @@
   <div class="collections-inner">
     <div class="collections-header reveal">
       <div>
-        <span class="label-tag" style="color:rgba(255,255,255,0.4);">Collections</span>
-        <h2 class="display">Designed to feel<br>at home.</h2>
+        <span class="label-tag" style="color:rgba(255,255,255,0.4);" data-i18n="collections_label">Collections</span>
+        <h2 class="display" data-i18n-html="collections_h2">Designed to feel<br>at home.</h2>
       </div>
-      <p>Each colour palette is chosen to complement modern interiors — so it belongs in your living room, not just the playroom.</p>
+      <p data-i18n="collections_sub">Each colour palette is chosen to complement modern interiors — so it belongs in your living room, not just the playroom.</p>
     </div>
     <div class="collections-grid" style="grid-template-columns:1fr;">
       <div class="collection-card sand reveal" style="display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;">
         <div>
-          <span class="collection-name">Sand Collection</span>
-          <div class="collection-title display">Warm<br>& Grounded</div>
-          <p class="collection-desc">Warm neutral tones inspired by natural materials. Available in the first batch.</p>
+          <span class="collection-name" data-i18n="sand_collection">Sand Collection</span>
+          <div class="collection-title display" data-i18n-html="sand_tagline">Warm<br>&amp; Grounded</div>
+          <p class="collection-desc" data-i18n="sand_desc">Warm neutral tones inspired by natural materials. Available in the first batch.</p>
         </div>
         <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;">
-          <span style="background:rgba(255,255,255,0.2);color:white;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;padding:6px 14px;border-radius:100px;">Launching Q1 2027</span>
+          <span style="background:rgba(255,255,255,0.2);color:white;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;padding:6px 14px;border-radius:100px;" data-i18n="launching_q1">Launching Q1 2027</span>
           <div style="display:flex;gap:8px;align-items:center;">
-            <span style="font-size:0.75rem;color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase;">Coming later:</span>
+            <span style="font-size:0.75rem;color:rgba(255,255,255,0.5);letter-spacing:0.1em;text-transform:uppercase;" data-i18n="coming_later">Coming later:</span>
             <span style="background:rgba(94,135,162,0.6);color:white;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border-radius:100px;">Ocean</span>
             <span style="background:rgba(212,148,141,0.6);color:white;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border-radius:100px;">Blush</span>
           </div>
@@ -1241,67 +1246,67 @@
 <section style="padding:100px 56px;max-width:800px;margin:0 auto;">
   <div style="text-align:center;margin-bottom:56px;" class="reveal">
     <span class="label-tag">FAQ</span>
-    <h2 class="display" style="font-size:clamp(2rem,3.5vw,3rem);margin-top:12px;">Questions parents ask</h2>
+    <h2 class="display" style="font-size:clamp(2rem,3.5vw,3rem);margin-top:12px;" data-i18n="faq_h2">Questions parents ask</h2>
   </div>
   <div style="display:flex;flex-direction:column;gap:0;" id="faq-list">
 
     <div class="faq-item reveal">
       <button class="faq-q" onclick="toggleFaq(this)">
-        Is it safe for young kids?
+        <span data-i18n="faq1_q">Is it safe for young kids?</span>
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-a">
-        <p>Yes. The ATA KIDDO Movement Bike is CE certified and meets EU EN71 toy safety standards. It has a stable low base, secure pedal straps, and soft-grip handles — designed specifically so kids can ride confidently without risk of tipping.</p>
+        <p data-i18n="faq1_a">Yes. The ATA KIDDO Movement Bike is CE certified and meets EU EN71 toy safety standards. It has a stable low base, secure pedal straps, and soft-grip handles — designed specifically so kids can ride confidently without risk of tipping.</p>
       </div>
     </div>
 
     <div class="faq-item reveal">
       <button class="faq-q" onclick="toggleFaq(this)">
-        When will it ship?
+        <span data-i18n="faq2_q">When will it ship?</span>
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-a">
-        <p>The first batch of 1,000 units is planned to ship in Q1 2027. Everyone who reserves a spot now will be emailed first when orders open — at the early access price of €119.</p>
+        <p data-i18n="faq2_a">The first batch of 1,000 units is planned to ship in Q1 2027. Everyone who reserves a spot now will be emailed first when orders open — at the early access price of €119.</p>
       </div>
     </div>
 
     <div class="faq-item reveal">
       <button class="faq-q" onclick="toggleFaq(this)">
-        Does it grow with my child?
+        <span data-i18n="faq3_q">Does it grow with my child?</span>
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-a">
-        <p>Yes. Both the seat height and handlebars are adjustable, so the bike grows with your child over several years rather than being outgrown in a single season.</p>
+        <p data-i18n="faq3_a">Yes. Both the seat height and handlebars are adjustable, so the bike grows with your child over several years rather than being outgrown in a single season.</p>
       </div>
     </div>
 
     <div class="faq-item reveal">
       <button class="faq-q" onclick="toggleFaq(this)">
-        How difficult is assembly?
+        <span data-i18n="faq4_q">How difficult is assembly?</span>
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-a">
-        <p>Minimal. The bike arrives largely pre-assembled and takes under 10 minutes to set up. No special tools needed.</p>
+        <p data-i18n="faq4_a">Minimal. The bike arrives largely pre-assembled and takes under 10 minutes to set up. No special tools needed.</p>
       </div>
     </div>
 
     <div class="faq-item reveal">
       <button class="faq-q" onclick="toggleFaq(this)">
-        What's the return policy?
+        <span data-i18n="faq5_q">What's the return policy?</span>
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-a">
-        <p>We'll offer a full return policy through our Shopify store at launch. If you're not satisfied within 30 days, we'll arrange a return at no cost to you.</p>
+        <p data-i18n="faq5_a">We'll offer a full return policy through our Shopify store at launch. If you're not satisfied within 30 days, we'll arrange a return at no cost to you.</p>
       </div>
     </div>
 
     <div class="faq-item reveal">
       <button class="faq-q" onclick="toggleFaq(this)">
-        Where does it ship to?
+        <span data-i18n="faq6_q">Where does it ship to?</span>
         <span class="faq-icon">+</span>
       </button>
       <div class="faq-a">
-        <p>The first batch ships to Austria, Germany, and Switzerland. We plan to expand to more European countries in subsequent batches.</p>
+        <p data-i18n="faq6_a">The first batch ships to Austria, Germany, and Switzerland. We plan to expand to more European countries in subsequent batches.</p>
       </div>
     </div>
 
@@ -1355,35 +1360,35 @@
 <!-- ── WAITLIST ──────────────────────────────────────── -->
 <section class="section-signup" id="signup">
   <div class="signup-inner reveal">
-    <span class="label-tag">Early Access</span>
-    <h2 class="display">Be part of<br>the first batch.</h2>
-    <p>First batch: <strong>1,000 units</strong>, shipping <strong>Q1 2027</strong>. Reserve your spot now at the early access price — before we open to the public.</p>
+    <span class="label-tag" data-i18n="waitlist_label">Early Access</span>
+    <h2 class="display" data-i18n-html="waitlist_h2">Be part of<br>the first batch.</h2>
+    <p data-i18n-html="waitlist_body">First batch: <strong>1,000 units</strong>, shipping <strong>Q1 2027</strong>. Reserve your spot now at the early access price — before we open to the public.</p>
 
     <div class="signup-price-block">
       <div class="signup-price-left">
         <div class="signup-price-amount">€119</div>
-        <div class="signup-price-label">Early Access Price</div>
+        <div class="signup-price-label" data-i18n="price_label_early_access">Early Access Price</div>
       </div>
       <div class="signup-price-divider"></div>
       <div class="signup-price-right">
         <div class="signup-price-retail">€179</div>
-        <div class="signup-price-saving">Retail price after launch</div>
+        <div class="signup-price-saving" data-i18n="price_retail_after">Retail price after launch</div>
       </div>
     </div>
 
     <div class="signup-form-wrap">
       <form class="signup-form" action="#" onsubmit="handleSignupSubmit(event)">
-        <input type="text" name="name" placeholder="Your name" required />
+        <input type="text" name="name" placeholder="Your name" data-i18n-placeholder="placeholder_name" required />
         <input type="email" name="email" placeholder="your@email.com" required />
         <label style="display:flex;align-items:flex-start;gap:10px;font-size:0.8rem;color:var(--mid);line-height:1.6;cursor:pointer;max-width:400px;text-align:left;">
           <input type="checkbox" name="gdpr" required style="margin-top:3px;flex-shrink:0;accent-color:var(--sand);" />
-          <span>I agree to receive updates about ATA KIDDO's launch and accept the <a href="privacy.html" target="_blank" style="color:var(--sand);text-decoration:underline;">Privacy Policy</a>. You can unsubscribe at any time.</span>
+          <span data-i18n-html="gdpr_text">I agree to receive updates about ATA KIDDO's launch and accept the <a href="privacy.html" target="_blank" style="color:var(--sand);text-decoration:underline;">Privacy Policy</a>. You can unsubscribe at any time.</span>
         </label>
-        <button type="submit">Reserve My Spot</button>
+        <button type="submit" data-i18n="nav_cta">Reserve My Spot</button>
       </form>
-      <p class="signup-note">We'll email you when the first batch opens — expected Q1 2027. No spam, ever.</p>
-      <p class="signup-note" style="margin-top:6px;">🇦🇹 🇩🇪 🇨🇭 &nbsp;Shipping across the DACH region</p>
-      <div class="signup-success" id="signup-success">
+      <p class="signup-note" data-i18n="waitlist_note">We'll email you when the first batch opens — expected Q1 2027. No spam, ever.</p>
+      <p class="signup-note" style="margin-top:6px;" data-i18n-html="waitlist_note2">🇦🇹 🇩🇪 🇨🇭 &nbsp;Shipping across the DACH region</p>
+      <div class="signup-success" id="signup-success" data-i18n="success_msg">
         ✓ Spot reserved! We'll email you when the first batch opens in Q1 2027.
       </div>
     </div>
@@ -1396,8 +1401,8 @@
     <img src="logo-icon.png" alt="ATA KIDDO" />
     <span class="footer-wordmark">ATA KIDDO</span>
   </div>
-  <p class="footer-tagline">Play. Move. Grow.</p>
-  <p class="footer-copy">© 2026 ATA KIDDO. All rights reserved. · <a href="privacy.html" style="color:var(--mid);text-decoration:underline;">Privacy Policy</a> · <a href="mailto:info@ata-kiddo.com" style="color:var(--mid);text-decoration:underline;">Contact</a></p>
+  <p class="footer-tagline" data-i18n="footer_tagline">Play. Move. Grow.</p>
+  <p class="footer-copy" data-i18n-html="footer_copy">© 2026 ATA KIDDO. All rights reserved. · <a href="privacy.html" style="color:var(--mid);text-decoration:underline;">Privacy Policy</a> · <a href="mailto:info@ata-kiddo.com" style="color:var(--mid);text-decoration:underline;">Contact</a></p>
 </footer>
 
 <script>
@@ -1454,10 +1459,11 @@
     const btn = form.querySelector('button');
     btn.textContent = '…';
     btn.disabled = true;
+    const lang = localStorage.getItem('ata_lang') || (navigator.language.startsWith('de') ? 'de' : 'en');
     submitToBrevo(name, email).then(() => {
-      form.innerHTML = '<p style="color:var(--teal);font-size:0.95rem;font-weight:500;padding:16px 0;">✓ Spot reserved! We\'ll email you when the first batch opens in Q1 2027.</p>';
+      form.innerHTML = '<p style="color:var(--teal);font-size:0.95rem;font-weight:500;padding:16px 0;">' + translations[lang].hero_success + '</p>';
     }).catch(() => {
-      btn.textContent = 'Reserve My Spot';
+      btn.textContent = translations[lang].nav_cta;
       btn.disabled = false;
       alert('Something went wrong — please check your connection and try again.');
     });
@@ -1472,11 +1478,14 @@
     const btn = form.querySelector('button');
     btn.textContent = '…';
     btn.disabled = true;
+    const lang = localStorage.getItem('ata_lang') || (navigator.language.startsWith('de') ? 'de' : 'en');
     submitToBrevo(name, email).then(() => {
       form.style.display = 'none';
-      document.getElementById('signup-success').style.display = 'block';
+      const successEl = document.getElementById('signup-success');
+      successEl.textContent = translations[lang].success_msg;
+      successEl.style.display = 'block';
     }).catch(() => {
-      btn.textContent = 'Reserve My Spot';
+      btn.textContent = translations[lang].nav_cta;
       btn.disabled = false;
       alert('Something went wrong — please check your connection and try again.');
     });
@@ -1485,12 +1494,12 @@
 
 <!-- ── COOKIE CONSENT BANNER ─────────────────────────── -->
 <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--dark);color:white;padding:20px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;box-shadow:0 -4px 32px rgba(0,0,0,0.15);">
-  <p style="font-size:0.85rem;line-height:1.6;color:rgba(255,255,255,0.8);max-width:640px;margin:0;">
+  <p id="cookie-text" style="font-size:0.85rem;line-height:1.6;color:rgba(255,255,255,0.8);max-width:640px;margin:0;">
     We use Google Analytics to understand how visitors use this page — no personal data is shared without your consent. See our <a href="privacy.html" style="color:var(--sand);text-decoration:underline;">Privacy Policy</a>.
   </p>
   <div style="display:flex;gap:12px;flex-shrink:0;">
-    <button onclick="declineCookies()" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.7);padding:10px 20px;border-radius:100px;font-family:inherit;font-size:0.82rem;cursor:pointer;transition:border-color 0.2s;">Decline</button>
-    <button onclick="acceptCookies()" style="background:var(--sand);border:none;color:white;padding:10px 24px;border-radius:100px;font-family:inherit;font-size:0.82rem;font-weight:500;cursor:pointer;transition:background 0.2s;">Accept Analytics</button>
+    <button id="cookie-decline-btn" onclick="declineCookies()" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.7);padding:10px 20px;border-radius:100px;font-family:inherit;font-size:0.82rem;cursor:pointer;transition:border-color 0.2s;" data-i18n="cookie_decline">Decline</button>
+    <button id="cookie-accept-btn" onclick="acceptCookies()" style="background:var(--sand);border:none;color:white;padding:10px 24px;border-radius:100px;font-family:inherit;font-size:0.82rem;font-weight:500;cursor:pointer;transition:background 0.2s;" data-i18n="cookie_accept">Accept Analytics</button>
   </div>
 </div>
 
@@ -1511,6 +1520,289 @@
     localStorage.setItem('ata_cookie_consent', 'declined');
     document.getElementById('cookie-banner').style.display = 'none';
   }
+</script>
+
+<!-- ── TRANSLATIONS ──────────────────────────────────── -->
+<script>
+  const translations = {
+    en: {
+      nav_product: 'Product',
+      nav_collections: 'Collections',
+      nav_cta: 'Reserve My Spot',
+      hero_eyebrow: 'First Batch · Q1 2027',
+      hero_h1: 'Where play<br>becomes <em>healthy</em><br>movement.',
+      hero_sub: 'Premium movement equipment for kids. Designed to fit your home, and built to build your child.',
+      early_access: 'Early Access',
+      reserve_yours: 'Reserve yours',
+      placeholder_name: 'Your name',
+      gdpr_text: 'I agree to receive updates about ATA KIDDO\'s launch and accept the <a href="privacy.html" target="_blank" style="color:var(--sand);text-decoration:underline;">Privacy Policy</a>. You can unsubscribe at any time.',
+      hero_batch_note: 'First batch: 1,000 units · Ships Q1 2027',
+      badge_eu_safety: 'EU Safety',
+      badge_ce: 'CE Certified',
+      problem_label: 'The Problem',
+      problem_h2: 'Kids move less<br>than ever before.',
+      problem_body: 'Too much screen time, not enough movement. Indoor spaces don\'t invite active play, and most toys develop cognitive skills while completely ignoring motor development — the foundation of confident, healthy children.',
+      stat1_label: 'children meets all daily<br>movement guidelines',
+      stat2_label: 'of young children exceed<br>recommended screen time',
+      product_label: 'The Product',
+      product_desc: 'Crafted for short, joyful sessions of active play. Intuitive for little riders, refined enough for your living room.',
+      spec_designed_for: 'Designed for',
+      spec_young_children: 'Young children',
+      spec_seat: 'Seat',
+      spec_adjustable_height: 'Adjustable height',
+      spec_mechanism: 'Mechanism',
+      spec_quiet_pedals: 'Quiet, smooth pedals',
+      spec_safety: 'Safety',
+      spec_ce_certified: 'CE certified (EU)',
+      spec_collections: 'Collections',
+      spec_use: 'Use',
+      spec_indoor: 'Indoor, daily play',
+      spec_early_access_price: 'Early access price',
+      sand_collection: 'Sand Collection',
+      story_label: 'Our Story',
+      story_h2: 'Why we built<br>ATA KIDDO',
+      story_col1: 'Growing up, my wife and I never needed to be told to go outside. We climbed trees, ran around the neighbourhood with our friends, and came home dirty and exhausted. Movement was just… life.',
+      story_col2: 'Then we watched something shift in the children around us. Nieces, nephews, friends\' kids — hours in front of screens, surrounded by clever toys for their minds. But somewhere along the way, the body got left behind.',
+      pull_quote_attribution: '— Our 3-year-old niece, watching her mum on a stationary bike',
+      story_col3: 'She wasn\'t asking for a cartoon. She wasn\'t asking for a tablet. She wanted to move. I looked at my wife and said: <em style="color:white;">"We need to close this gap."</em>',
+      story_col4: 'There were plenty of toys for little minds — but almost nothing designed to get little bodies moving, indoors, in a way that fit real family homes. Nothing a toddler could call their own.',
+      story_closing: 'That was the moment ATA KIDDO was born.',
+      benefits_label: 'Why It Works',
+      benefits_h2: 'Built for how<br>children play.',
+      benefits_sub: 'Designed around child development principles, not fitness aesthetics.',
+      benefit1_title: 'Strong Legs & Coordination',
+      benefit1_body: 'Strengthens legs, core and coordination through full-body pedaling — the movement kids need most in their early years.',
+      benefit2_title: 'Confidence Through Movement',
+      benefit2_body: 'Children develop at their own pace. No pressure, no competition — just the quiet joy of mastering their own body.',
+      benefit3_title: 'Made for Modern Homes',
+      benefit3_body: 'Muted, natural tones and Scandinavian-inspired forms. ATA KIDDO belongs in your living room — not hidden away.',
+      collections_label: 'Collections',
+      collections_h2: 'Designed to feel<br>at home.',
+      collections_sub: 'Each colour palette is chosen to complement modern interiors — so it belongs in your living room, not just the playroom.',
+      sand_tagline: 'Warm<br>& Grounded',
+      sand_desc: 'Warm neutral tones inspired by natural materials. Available in the first batch.',
+      launching_q1: 'Launching Q1 2027',
+      coming_later: 'Coming later:',
+      faq_h2: 'Questions parents ask',
+      faq1_q: 'Is it safe for young kids?',
+      faq1_a: 'Yes. The ATA KIDDO Movement Bike is CE certified and meets EU EN71 toy safety standards. It has a stable low base, secure pedal straps, and soft-grip handles — designed specifically so kids can ride confidently without risk of tipping.',
+      faq2_q: 'When will it ship?',
+      faq2_a: 'The first batch of 1,000 units is planned to ship in Q1 2027. Everyone who reserves a spot now will be emailed first when orders open — at the early access price of €119.',
+      faq3_q: 'Does it grow with my child?',
+      faq3_a: 'Yes. Both the seat height and handlebars are adjustable, so the bike grows with your child over several years rather than being outgrown in a single season.',
+      faq4_q: 'How difficult is assembly?',
+      faq4_a: 'Minimal. The bike arrives largely pre-assembled and takes under 10 minutes to set up. No special tools needed.',
+      faq5_q: "What's the return policy?",
+      faq5_a: "We'll offer a full return policy through our Shopify store at launch. If you're not satisfied within 30 days, we'll arrange a return at no cost to you.",
+      faq6_q: 'Where does it ship to?',
+      faq6_a: 'The first batch ships to Austria, Germany, and Switzerland. We plan to expand to more European countries in subsequent batches.',
+      waitlist_label: 'Early Access',
+      waitlist_h2: 'Be part of<br>the first batch.',
+      waitlist_body: 'First batch: <strong>1,000 units</strong>, shipping <strong>Q1 2027</strong>. Reserve your spot now at the early access price — before we open to the public.',
+      price_label_early_access: 'Early Access Price',
+      price_retail_after: 'Retail price after launch',
+      waitlist_note: "We'll email you when the first batch opens — expected Q1 2027. No spam, ever.",
+      waitlist_note2: '🇦🇹 🇩🇪 🇨🇭 &nbsp;Shipping across the DACH region',
+      success_msg: "✓ Spot reserved! We'll email you when the first batch opens in Q1 2027.",
+      hero_success: "✓ Spot reserved! We'll email you when the first batch opens in Q1 2027.",
+      footer_tagline: 'Play. Move. Grow.',
+      footer_copy: '© 2026 ATA KIDDO. All rights reserved. · <a href="privacy.html" style="color:var(--mid);text-decoration:underline;">Privacy Policy</a> · <a href="mailto:info@ata-kiddo.com" style="color:var(--mid);text-decoration:underline;">Contact</a>',
+      cookie_text: 'We use Google Analytics to understand how visitors use this page — no personal data is shared without your consent. See our <a href="privacy.html" style="color:var(--sand);text-decoration:underline;">Privacy Policy</a>.',
+      cookie_decline: 'Decline',
+      cookie_accept: 'Accept Analytics',
+      marquee_play: 'Play',
+      marquee_move: 'Move',
+      marquee_grow: 'Grow',
+      marquee_for_kids: 'For Kids',
+      marquee_ce_certified: 'CE Certified',
+      marquee_scandinavian_design: 'Scandinavian Design',
+      marquee_interior_friendly: 'Interior Friendly',
+      marquee_screen_free: 'Screen-free Play',
+      marquee_active_play: 'Active Play',
+      marquee_daily_active: 'Daily Active Play'
+    },
+    de: {
+      nav_product: 'Produkt',
+      nav_collections: 'Kollektionen',
+      nav_cta: 'Meinen Platz reservieren',
+      hero_eyebrow: 'Erste Serie · Q1 2027',
+      hero_h1: 'Wo Spielen zur gesunden Bewegung wird.',
+      hero_sub: 'Hochwertiges Bewegungsequipment für Kinder. Für Ihr Zuhause gestaltet, für Ihr Kind entwickelt.',
+      early_access: 'Frühzugang',
+      reserve_yours: 'Jetzt reservieren',
+      placeholder_name: 'Ihr Name',
+      gdpr_text: 'Ich stimme zu, Updates über den Launch von ATA KIDDO zu erhalten und akzeptiere die <a href="privacy.html" target="_blank" style="color:var(--sand);text-decoration:underline;">Datenschutzrichtlinie</a>. Sie können sich jederzeit abmelden.',
+      hero_batch_note: 'Erste Serie: 1.000 Einheiten · Lieferung Q1 2027',
+      badge_eu_safety: 'EU-Sicherheit',
+      badge_ce: 'CE-zertifiziert',
+      problem_label: 'Das Problem',
+      problem_h2: 'Kinder bewegen sich weniger als je zuvor.',
+      problem_body: 'Zu viel Bildschirmzeit, zu wenig Bewegung. Innenräume laden nicht zu aktivem Spielen ein, und die meisten Spielzeuge fördern kognitive Fähigkeiten, ignorieren dabei aber motorische Entwicklung — die Grundlage für gesunde, selbstbewusste Kinder.',
+      stat1_label: 'Kinder erfüllen alle täglichen Bewegungsempfehlungen',
+      stat2_label: 'der Kleinkinder überschreiten die empfohlene Bildschirmzeit',
+      product_label: 'Das Produkt',
+      product_desc: 'Für kurze, freudvolle Einheiten aktiven Spielens. Intuitiv für kleine Fahrer, raffiniert genug für Ihr Wohnzimmer.',
+      spec_designed_for: 'Geeignet für',
+      spec_young_children: 'Kleinkinder',
+      spec_seat: 'Sitz',
+      spec_adjustable_height: 'Höhenverstellbar',
+      spec_mechanism: 'Mechanismus',
+      spec_quiet_pedals: 'Leise, sanfte Pedale',
+      spec_safety: 'Sicherheit',
+      spec_ce_certified: 'CE-zertifiziert (EU)',
+      spec_collections: 'Kollektionen',
+      spec_use: 'Nutzung',
+      spec_indoor: 'Innen, tägliches Spielen',
+      spec_early_access_price: 'Frühzugangspreis',
+      sand_collection: 'Sand-Kollektion',
+      story_label: 'Unsere Geschichte',
+      story_h2: 'Warum wir ATA KIDDO gegründet haben',
+      story_col1: 'Als wir aufwuchsen, musste uns niemand sagen, dass wir nach draußen gehen sollen. Wir kletterten auf Bäume, rannten mit unseren Freunden durch die Nachbarschaft und kamen schmutzig und erschöpft nach Hause. Bewegung war einfach… Leben.',
+      story_col2: 'Dann beobachteten wir einen Wandel bei den Kindern in unserem Umfeld. Nichten, Neffen, Kinder von Freunden — stundenlang vor Bildschirmen, umgeben von cleveren Spielzeugen für ihren Verstand. Aber irgendwo auf dem Weg blieb der Körper zurück.',
+      pull_quote_attribution: '— Unsere 3-jährige Nichte, als sie ihrer Mutter auf dem Heimtrainer zusah',
+      story_col3: 'Sie fragte nicht nach einem Cartoon. Sie fragte nicht nach einem Tablet. Sie wollte sich bewegen. Ich sah meine Frau an und sagte: <em style="color:white;">„Wir müssen diese Lücke schließen."</em>',
+      story_col4: 'Es gab viele Spielzeuge für kleine Köpfe — aber kaum etwas, das darauf ausgelegt war, kleine Körper drinnen zu bewegen, auf eine Weise, die in echte Familienzuhause passt. Nichts, das einem Kleinkind wirklich gehören konnte.',
+      story_closing: 'Das war der Moment, in dem ATA KIDDO geboren wurde.',
+      benefits_label: 'Warum es funktioniert',
+      benefits_h2: 'Entwickelt für die Art, wie Kinder spielen.',
+      benefits_sub: 'Entwickelt nach Grundsätzen der kindlichen Entwicklung, nicht nach Fitnessästhetik.',
+      benefit1_title: 'Starke Beine & Koordination',
+      benefit1_body: 'Stärkt Beine, Rumpf und Koordination durch Ganzkörper-Pedalieren — die Bewegung, die Kinder in ihren frühen Jahren am meisten brauchen.',
+      benefit2_title: 'Selbstvertrauen durch Bewegung',
+      benefit2_body: 'Kinder entwickeln sich in ihrem eigenen Tempo. Kein Druck, kein Wettbewerb — nur die stille Freude, den eigenen Körper zu meistern.',
+      benefit3_title: 'Für moderne Zuhause gemacht',
+      benefit3_body: 'Gedämpfte Naturtöne und skandinavisch inspirierte Formen. ATA KIDDO gehört in Ihr Wohnzimmer — nicht versteckt in der Ecke.',
+      collections_label: 'Kollektionen',
+      collections_h2: 'Entworfen, um sich zuhause zu fühlen.',
+      collections_sub: 'Jede Farbpalette wurde gewählt, um moderne Innenräume zu ergänzen — damit es in Ihr Wohnzimmer gehört, nicht nur ins Spielzimmer.',
+      sand_tagline: 'Warm<br>& Geerdet',
+      sand_desc: 'Warme Naturtöne inspiriert von natürlichen Materialien. In der ersten Serie erhältlich.',
+      launching_q1: 'Markteinführung Q1 2027',
+      coming_later: 'Folgt später:',
+      faq_h2: 'Fragen von Eltern',
+      faq1_q: 'Ist es sicher für kleine Kinder?',
+      faq1_a: 'Ja. Das ATA KIDDO Movement Bike ist CE-zertifiziert und erfüllt die EU-Spielzeugsicherheitsnorm EN71. Es hat eine stabile, niedrige Basis, sichere Pedalriemen und weiche Griffe — speziell entwickelt, damit Kinder sicher und ohne Kippgefahr fahren können.',
+      faq2_q: 'Wann wird geliefert?',
+      faq2_a: 'Die erste Serie von 1.000 Einheiten soll in Q1 2027 geliefert werden. Alle, die jetzt einen Platz reservieren, werden zuerst informiert, wenn die Bestellungen öffnen — zum Frühzugangspreis von €119.',
+      faq3_q: 'Wächst es mit meinem Kind mit?',
+      faq3_a: 'Ja. Sowohl Sitzhöhe als auch Lenker sind verstellbar, sodass das Bike über mehrere Jahre mitwächst und nicht schon nach einer Saison zu klein ist.',
+      faq4_q: 'Wie aufwändig ist der Aufbau?',
+      faq4_a: 'Minimal. Das Bike kommt weitgehend vormontiert und ist in unter 10 Minuten aufgebaut. Kein Spezialwerkzeug erforderlich.',
+      faq5_q: 'Wie sieht die Rückgabepolitik aus?',
+      faq5_a: 'Wir werden bei unserem Launch über unseren Shopify-Shop eine vollständige Rückgabepolitik anbieten. Wenn Sie innerhalb von 30 Tagen nicht zufrieden sind, organisieren wir eine kostenlose Rücksendung.',
+      faq6_q: 'Wohin wird geliefert?',
+      faq6_a: 'Die erste Serie wird nach Österreich, Deutschland und in die Schweiz geliefert. Wir planen, in späteren Serien weitere europäische Länder hinzuzufügen.',
+      waitlist_label: 'Frühzugang',
+      waitlist_h2: 'Seien Sie Teil der ersten Serie.',
+      waitlist_body: 'Erste Serie: <strong>1.000 Einheiten</strong>, Lieferung <strong>Q1 2027</strong>. Reservieren Sie Ihren Platz jetzt zum Frühzugangspreis — bevor wir für die Öffentlichkeit öffnen.',
+      price_label_early_access: 'Frühzugangspreis',
+      price_retail_after: 'Preis nach dem Launch',
+      waitlist_note: 'Wir informieren Sie per E-Mail, wenn die erste Serie verfügbar ist — voraussichtlich Q1 2027. Kein Spam, versprochen.',
+      waitlist_note2: '🇦🇹 🇩🇪 🇨🇭 &nbsp;Lieferung in der DACH-Region',
+      success_msg: '✓ Platz reserviert! Wir informieren Sie, wenn die erste Serie in Q1 2027 verfügbar ist.',
+      hero_success: '✓ Platz reserviert! Wir informieren Sie, wenn die erste Serie in Q1 2027 öffnet.',
+      footer_tagline: 'Spielen. Bewegen. Wachsen.',
+      footer_copy: '© 2026 ATA KIDDO. Alle Rechte vorbehalten. · <a href="privacy.html" style="color:var(--mid);text-decoration:underline;">Datenschutzrichtlinie</a> · <a href="mailto:info@ata-kiddo.com" style="color:var(--mid);text-decoration:underline;">Kontakt</a>',
+      cookie_text: 'Wir verwenden Google Analytics, um zu verstehen, wie Besucher diese Seite nutzen — ohne Ihre Zustimmung werden keine persönlichen Daten geteilt. Weitere Informationen in unserer <a href="privacy.html" style="color:var(--sand);text-decoration:underline;">Datenschutzrichtlinie</a>.',
+      cookie_decline: 'Ablehnen',
+      cookie_accept: 'Analyse akzeptieren',
+      marquee_play: 'Play',
+      marquee_move: 'Move',
+      marquee_grow: 'Grow',
+      marquee_for_kids: 'Für Kinder',
+      marquee_ce_certified: 'CE-zertifiziert',
+      marquee_scandinavian_design: 'Skandinavisches Design',
+      marquee_interior_friendly: 'Wohnraumfreundlich',
+      marquee_screen_free: 'Bildschirmfreies Spielen',
+      marquee_active_play: 'Aktives Spielen',
+      marquee_daily_active: 'Täglich aktiv spielen'
+    }
+  };
+
+  // Marquee key map
+  const marqueeKeyMap = {
+    play: 'marquee_play',
+    move: 'marquee_move',
+    grow: 'marquee_grow',
+    for_kids: 'marquee_for_kids',
+    ce_certified: 'marquee_ce_certified',
+    scandinavian_design: 'marquee_scandinavian_design',
+    interior_friendly: 'marquee_interior_friendly',
+    screen_free: 'marquee_screen_free',
+    active_play: 'marquee_active_play',
+    daily_active: 'marquee_daily_active'
+  };
+
+  function applyLang(lang) {
+    // Update html lang attribute
+    document.documentElement.lang = lang;
+
+    // Apply data-i18n (textContent)
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (translations[lang][key] !== undefined) {
+        el.textContent = translations[lang][key];
+      }
+    });
+
+    // Apply data-i18n-html (innerHTML)
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (translations[lang][key] !== undefined) {
+        el.innerHTML = translations[lang][key];
+      }
+    });
+
+    // Apply data-i18n-placeholder
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (translations[lang][key] !== undefined) {
+        el.placeholder = translations[lang][key];
+      }
+    });
+
+    // Apply cookie banner text (innerHTML)
+    const cookieText = document.getElementById('cookie-text');
+    if (cookieText) {
+      cookieText.innerHTML = translations[lang].cookie_text;
+    }
+
+    // Apply marquee items
+    document.querySelectorAll('[data-marquee]').forEach(el => {
+      const marqKey = el.getAttribute('data-marquee');
+      const transKey = marqueeKeyMap[marqKey];
+      if (transKey && translations[lang][transKey] !== undefined) {
+        // Preserve the dot span inside
+        const dot = el.querySelector('.marquee-dot');
+        el.textContent = translations[lang][transKey];
+        if (dot) el.appendChild(dot);
+      }
+    });
+
+    // Update lang toggle button colors
+    const enBtn = document.getElementById('lang-en-btn');
+    const deBtn = document.getElementById('lang-de-btn');
+    if (enBtn && deBtn) {
+      enBtn.style.color = lang === 'en' ? 'var(--sand)' : 'var(--mid)';
+      deBtn.style.color = lang === 'de' ? 'var(--sand)' : 'var(--mid)';
+    }
+  }
+
+  function toggleLang() {
+    const current = localStorage.getItem('ata_lang') || (navigator.language.startsWith('de') ? 'de' : 'en');
+    const next = current === 'en' ? 'de' : 'en';
+    localStorage.setItem('ata_lang', next);
+    applyLang(next);
+  }
+
+  // Auto-apply on page load
+  (function() {
+    let lang = localStorage.getItem('ata_lang');
+    if (!lang) {
+      lang = navigator.language.startsWith('de') ? 'de' : 'en';
+    }
+    applyLang(lang);
+  })();
 </script>
 
 </body>
